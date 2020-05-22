@@ -1,0 +1,34 @@
+{
+    "name": "axaygadekar/laravel-brawlstars",
+    "description": "Laravel wrapper package for brawlstars api",
+    "keywords": [
+        "laravel-brawlstars",
+        "brawlstars"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Axay Gadekar",
+            "email": "axayhg@gmail.com",
+            "homepage": "https://axaygadekar.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AxayGadekar\\Brawlstars\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AxayGadekar\\Brawlstars\\BrawlstarsServiceProvider"
+            ]
+        }
+    }
+}
